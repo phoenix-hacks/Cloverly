@@ -10,11 +10,9 @@
   <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style-starter.css">
-  
 </head>
 
 <body>
-  <script src="https://widget.cxgenie.ai/widget.js" data-aid="18128429-d2cc-4db1-83d4-b51a9853dd34" data-lang="en"></script>
   <div class="header-w3l">
   <header id="site-header" class="header-w3l fixed-top">
     <div class="container">
@@ -146,6 +144,23 @@
       </svg>
     </div>
   </div>
+  <div class="chatbot-container">
+    <button class="chatbot-toggle" onclick="toggleChatbot()">💬 Chat with HEAN AI</button>
+    <div class="chatbot-window" id="chatbotWindow" style="display: none;">
+      <div class="chatbot-header">
+        <h3>HEAN AI Chatbot</h3>
+        <button onclick="toggleChatbot()">✖</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chatbot-message bot">Hello! I'm HEAN AI. How can I assist you today?</div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="userInput" placeholder="Type your question here..." onkeypress="sendMessage(event)">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
   <div class="w3l-content-1 py-5">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="row w3l-content-inf mt-lg-5 pt-lg-5">
@@ -166,9 +181,9 @@
   </div>
   <div class="med">
     
-    <button style=""><a href="https://www.apollopharmacy.in/upload-prescription">Order through Prescription</a></button>
+    <button><a href="https://www.apollopharmacy.in/upload-prescription">Order through Prescription</a></button>
   </div>
   <script src="/assets/js/script1.js"></script>
   <h3 style="background-color: white; text-align: center; padding-bottom: 10px;">Nearest Medical Centers :</h3>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d37063.319339899026!2d77.58280980872848!3d12.896306666555128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snearest%20hospitals%20and%20clinics!5e0!3m2!1sen!2sin!4v1731739585651!5m2!1sen!2sin" 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31057.34942372248!2d77.08607042785812!3d13.339781326616562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1snearest%20hospitals%20and%20clinics!5e0!3m2!1sen!2sin!4v1730212491552!5m2!1sen!2sin" 
   width="100%" height="650" style="border:20px; border-color: black;" allowfullscreen="" loading="lazy" title="Nearest Medical Centers" referrerpolicy="no-referrer-when-downgrade"></iframe>
